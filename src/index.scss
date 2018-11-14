@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import 'sass/post-it';
 
 $dark: #000000;
 $light: #ffffff;
+$link-color: red;
 $filter: rgba(0, 0, 0, 0.3);
 $montserrat: 'Montserrat';
+$bg-image: url('./image/cad3.jpg');
+$transition: all 0.3s ease;
 
-%fixed-screen{
-    position: fixed;
-    width: 100%;
+%full-screen{
     height: 100vh;
+    width: 100%;
+}
+%fixed{
+    position: fixed;
 }
 
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
     outline: none;
 }
 
@@ -27,3 +33,123 @@ html{
 .layer1{ z-index: -1 }
 .layer0{ z-index: 0 }
 
+.background {
+    @extend %full-screen;
+    @extend %fixed;
+    background: #ffffff;
+    background-image: $bg-image;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.filter{
+    @extend %full-screen;
+    @extend %fixed;
+    background-color: $filter;
+}
+
+.header{
+    bottom: 0;
+    color: $light;
+    display: block;
+    font: 20px $montserrat;
+    position: absolute;
+    .title{
+        font-size: 2.5em;
+        padding: 0 0 15px 50px;
+    }
+    .sub-title{
+        font-size: 1.3em;
+        padding: 0 0 25px 50px;
+    }
+    .button{
+        padding: 0 0 100px 50px;
+    }
+    #start{
+        background-color: transparent;
+        border: 1px solid $light;
+        border-radius: 10px;
+        color: $light;
+        cursor: pointer;
+        font-size: 1.6em;
+        padding: 10px 50px 10px 50px;
+        &:hover{
+            background-color: $light; 
+            color: $dark;
+        }
+    }
+}
+.nav{
+    background-color: $dark;
+    bottom: 0;
+    color: $light;
+    display: flex;
+    font: 22px $montserrat; 
+    justify-content: space-around;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    [data-target]{
+        cursor: pointer;
+        line-height: 60px;
+        transition: $transition;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.fixed{
+    position: fixed;
+    bottom: auto;
+    opacity: 1;
+    top: 0;
+}
+.blank{
+    @extend %full-screen;
+}
+main{
+    font: 20px $montserrat; 
+    position: relative;
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0 25px 0;
+        &:nth-child(even){
+            background-color: $light;
+            *{
+                color: $dark;
+            }
+        }
+        &:nth-child(odd){
+            background-color: $dark;
+            *{
+                color: $light;
+            }
+        }
+        .title{
+            font-size: 1.6em;
+            line-height: 80px;
+        }
+        .content{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            line-height: 50px;
+            a{
+                text-decoration: none;
+                &:hover{
+                    color: $link-color;
+                    transform: scale(1.1);
+                    transition: $transition;
+                }
+            }
+        }
+        .note{
+            font-size: 0.8em;
+            line-height: 60px;
+            font-style: italic;
+        }
+    }
+}

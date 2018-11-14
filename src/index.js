@@ -87,7 +87,7 @@ const content = (
 				<p></p>
 				<p>Kakunin Mistake Monitoring</p>
 				<p></p>
-				<p>Click <a href="#" data-target="kakunin">here</a> to view.</p>
+				<p>Click <span className="note-link" data-target="kakunin">here</span> to view.</p>
 				<p></p>
 				<p></p>
 				<p></p>
