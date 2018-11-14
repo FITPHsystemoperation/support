@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$dark: #000000;
+$light: #ffffff;
+$filter: rgba(0, 0, 0, 0.3);
+$montserrat: 'Montserrat';
+
+%fixed-screen{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.layer2{ z-index: -2 }
+.layer1{ z-index: -1 }
+.layer0{ z-index: 0 }
+
