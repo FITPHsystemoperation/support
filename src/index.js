@@ -45,15 +45,67 @@ class Main extends React.Component {
 	render() {
 		return (
 			<main>
+				<div id="Home" className="blank"></div>
 				{this.renderSection(this.props.content)}
+				<div className="blank"></div>
 			</main>
 		);
 	}
 }
 
+class BackGround extends React.Component {
+	render(){
+		return (
+			<div className="background"></div>
+		)
+	}
+}
+
+class NavLink extends React.Component {
+	render() {
+		return <div className="nav-link" onClick={this.props.onClick}>{this.props.label}</div>;
+	}
+}
+
+class NavBar extends React.Component {
+	navigate(target){
+		const nav = document.querySelector('.nav');
+		const targetDom = document.getElementById(target);
+		window.scrollTo(0, targetDom.offsetTop - nav.offsetHeight);
+	}
+	renderNavLink(content){
+		
+	}
+	render() {
+		return (
+			<nav className="nav">
+				<NavLink label="Home" onClick={() => this.navigate("Home")} />
+				<NavLink label="Monitoring" onClick={() => this.navigate("Monitoring")} />
+				<NavLink label="Manual" onClick={() => this.navigate("Manual")} />
+				<NavLink label="Report" onClick={() => this.navigate("Report")} />
+				<NavLink label="Kakunin" onClick={() => this.navigate("Kakunin Monitoring")} />
+				<NavLink label="Additional" onClick={() => this.navigate("Additional Links")} />
+			</nav>
+		)
+	}
+}
+
+class HomePage extends React.Component {
+	render() {
+		return (
+			<React.Fragment>
+				<BackGround />
+				<Main content={sections} />
+				<NavBar />
+			</React.Fragment>
+		)
+	}
+}
+ 
 const sections = [
 	{
 		title: "Monitoring",
+		nav: "Monitoring",
 		links: {
 			"Plan Monitoring (August 2018)": "https://docs.google.com/spreadsheets/d/1f4CM19eSHN_OdDZY39z4HAi1b_Ib4sfIP3aVderSdTM/edit#gid=925288811",
 			"Mistake Monitoring (August 2018)":"https://docs.google.com/spreadsheets/d/10ZE2AkGJCynve6tog7xT8NkGqFI-ZF36TbaA8EO89yw/edit#gid=0",
@@ -65,6 +117,7 @@ const sections = [
 	},
 	{
 		title: "Manual",
+		nav: "Manual",
 		links: {
 			"Check List":"../misc/pdf/checklist10.01.2018.pdf",
 			"Checking Manual":"../misc/pdf/manual_for_checking10.01.2018.pdf",
@@ -77,6 +130,7 @@ const sections = [
 	},
 	{
 		title: "Report",
+		nav: "Report",
 		links: {
 			"Monthly Comparison":"https://docs.google.com/spreadsheets/d/1S0FXjVacFKHxqwcVHWoMKkSI9NckSquD0DjNQzzNNMg/edit#gid=1015423851",
 			"Productivity & Quality Report":"https://docs.google.com/spreadsheets/d/1ZkU9-HDHKubtWJlStzilFwa-C-RDmr4-1sgm0CpCbnk/edit#gid=1537691498",
@@ -85,6 +139,7 @@ const sections = [
 	},
 		{
 		title: "Kakunin Monitoring",
+		nav: "Kakunin",
 		links: {
 			"Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
 			"Mistake Lists":"https://docs.google.com/spreadsheets/d/1Gd-GJ7ZHVfvRf3xZiz5K9UDrCUad3Zv_oeb9pKNIDgA/edit?usp=sharing",
@@ -93,6 +148,7 @@ const sections = [
 	},
 		{
 		title: "Additional Links",
+		nav: "Additional",
 		links: {
 			"Spread Sheet (Project)":"https://docs.google.com/spreadsheets/d/1hD1sYnf_btSktRM8SiYJStvzM5hsmdZHoROt4tSWCOU/edit?ts=584e3927#gid=464436514",
 			"Spread Sheet (JW Convertion)":"https://docs.google.com/spreadsheets/d/1jKAao-2QcKtGUz5ZBXxoAusP0Ulcsj9hn1R91EBcPtk/edit#gid=1563213429",
@@ -105,31 +161,12 @@ const sections = [
 	}
 ]
 
-ReactDOM.render(<Main content={sections} />, document.getElementById('root'));
+ReactDOM.render(<HomePage />, document.getElementById('root'));
 
-// const background = document.querySelector('.background');
-// const nav = document.querySelector('.nav')
-// const navY = nav.offsetTop;
-// const main = document.querySelector('main');
-// const navKey = document.querySelectorAll('[data-target]');
-
-// // change image during scrolls
-// function setImage(){
-// 	const scrolled = window.scrollY;
-// 	const height = background.offsetHeight;
-// 	let image;
-
-// 	scrolled >= navY ? nav.classList.add('fixed') : nav.classList.remove('fixed');
-// 	//scrolled > height ? image = 'url(\'../image/cad1.jpg\')' : image = 'url(\'../image/cad3.jpg\')';
-// 	// document.documentElement.style.setProperty('--image', image);
-// }
-
-// function navigate(){
-// 	const target = document.querySelector(`#${this.dataset.target}`);
-// 	window.scrollTo(0, target.offsetTop - nav.offsetHeight);
-// }
-
-// document.addEventListener('scroll', setImage);
-// navKey.forEach(key => {
-// 	key.addEventListener('click', navigate);
-// })
+const nav = document.querySelector('.nav');
+const navY = nav.offsetTop;
+function fixNavBar(){
+	const scrolled = window.scrollY;
+	scrolled >= navY ? nav.classList.add('fixed') : nav.classList.remove('fixed');
+}
+document.addEventListener('scroll', fixNavBar);
