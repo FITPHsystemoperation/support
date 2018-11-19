@@ -63,7 +63,14 @@ class BackGround extends React.Component {
 
 class NavLink extends React.Component {
 	render() {
-		return <div className="nav-link" onClick={this.props.onClick}>{this.props.label}</div>;
+		return (
+			<div className="nav-link"
+				key={this.props.key}
+				onClick={this.props.onClick}
+			>
+			{this.props.value}
+			</div>
+		);
 	}
 }
 
@@ -73,20 +80,42 @@ class NavBar extends React.Component {
 		const targetDom = document.getElementById(target);
 		window.scrollTo(0, targetDom.offsetTop - nav.offsetHeight);
 	}
+
 	renderNavLink(content){
-		
+		return content.map((section, index) => {
+			return <NavLink value={section.nav} onClick={() => this.navigate(section.title)} key={index} />
+		})
 	}
+
 	render() {
 		return (
 			<nav className="nav">
-				<NavLink label="Home" onClick={() => this.navigate("Home")} />
-				<NavLink label="Monitoring" onClick={() => this.navigate("Monitoring")} />
-				<NavLink label="Manual" onClick={() => this.navigate("Manual")} />
-				<NavLink label="Report" onClick={() => this.navigate("Report")} />
-				<NavLink label="Kakunin" onClick={() => this.navigate("Kakunin Monitoring")} />
-				<NavLink label="Additional" onClick={() => this.navigate("Additional Links")} />
+				<NavLink value="Home" onClick={() => this.navigate("Home")} />
+				{this.renderNavLink(sections)}
 			</nav>
 		)
+	}
+}
+
+class Header extends React.Component {
+	render() {
+		return (
+			<div className="header">
+				<div className="title">Training Department</div>
+				<div className="sub-title">Projects and Links</div>
+				<div className="button">
+					<input type="button"
+						id="start"
+						value="Get Started"
+						onClick={() => {
+							const nav = document.querySelector('.nav');
+							const targetDom = document.getElementById("Monitoring");
+							window.scrollTo(0, targetDom.offsetTop - nav.offsetHeight);
+						}}
+					/>
+				</div>
+			</div>
+		);
 	}
 }
 
@@ -96,6 +125,7 @@ class HomePage extends React.Component {
 			<React.Fragment>
 				<BackGround />
 				<Main content={sections} />
+				<Header />
 				<NavBar />
 			</React.Fragment>
 		)
@@ -107,10 +137,10 @@ const sections = [
 		title: "Monitoring",
 		nav: "Monitoring",
 		links: {
-			"Plan Monitoring (August 2018)": "https://docs.google.com/spreadsheets/d/1f4CM19eSHN_OdDZY39z4HAi1b_Ib4sfIP3aVderSdTM/edit#gid=925288811",
-			"Mistake Monitoring (August 2018)":"https://docs.google.com/spreadsheets/d/10ZE2AkGJCynve6tog7xT8NkGqFI-ZF36TbaA8EO89yw/edit#gid=0",
-			"Plan Monitoring v2.0":"https://docs.google.com/spreadsheets/d/1EeV-O9JyWU_l0LW5g0onSShgqolUA6ecxbkS7GvDcyw/edit#gid=853151862",
-			"Plan Monitoring v2.1":"https://docs.google.com/spreadsheets/d/1quD2imwF8rqBQUzq6-m8lrqKBnPz1WRk5uzez7mwZFw/edit#gid=472071419",
+			// "Plan Monitoring (August 2018)": "https://docs.google.com/spreadsheets/d/1f4CM19eSHN_OdDZY39z4HAi1b_Ib4sfIP3aVderSdTM/edit#gid=925288811",
+			// "Mistake Monitoring (August 2018)":"https://docs.google.com/spreadsheets/d/10ZE2AkGJCynve6tog7xT8NkGqFI-ZF36TbaA8EO89yw/edit#gid=0",
+			"Plan Monitoring v2.0 (September)":"https://docs.google.com/spreadsheets/d/1EeV-O9JyWU_l0LW5g0onSShgqolUA6ecxbkS7GvDcyw/edit#gid=853151862",
+			"Plan Monitoring v2.1 (October)":"https://docs.google.com/spreadsheets/d/1quD2imwF8rqBQUzq6-m8lrqKBnPz1WRk5uzez7mwZFw/edit#gid=472071419",
 			"Plan Monitoring v2.2 (November)":"https://docs.google.com/spreadsheets/d/1cdXoLbqUIzCjVEjcnhuEuX5EHR5ZwH6rJDFXvTGOKU4/edit#gid=472071419",
 		},
 		others: ""
