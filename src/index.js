@@ -172,10 +172,10 @@ const sections = [
 		title: "Kakunin Monitoring",
 		nav: "Kakunin",
 		links: {
-			"Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
-			"Mistake Lists":"https://docs.google.com/spreadsheets/d/1Gd-GJ7ZHVfvRf3xZiz5K9UDrCUad3Zv_oeb9pKNIDgA/edit?usp=sharing",
+			// "Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
+			// "Mistake Lists":"https://docs.google.com/spreadsheets/d/1Gd-GJ7ZHVfvRf3xZiz5K9UDrCUad3Zv_oeb9pKNIDgA/edit?usp=sharing",
 		},
-		others: ""
+		others: <div className="note">*Links under development...</div>
 	},
 		{
 		title: "Additional Links",
