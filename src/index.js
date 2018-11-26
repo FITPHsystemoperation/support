@@ -173,7 +173,7 @@ const sections = [
 		nav: "Kakunin",
 		links: {
 			// "Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
-			// "Mistake Lists":"https://docs.google.com/spreadsheets/d/1Gd-GJ7ZHVfvRf3xZiz5K9UDrCUad3Zv_oeb9pKNIDgA/edit?usp=sharing",
+			"Plan Monitoring":"https://docs.google.com/spreadsheets/d/1Wu_m2HQ1NtJgRTUuUafH_BuLoCsI1SRQFum0UK4NRPM/edit#gid=853151862",
 		},
 		others: <div className="note">*Links under development...</div>
 	},
