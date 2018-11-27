@@ -173,7 +173,8 @@ const sections = [
 		nav: "Kakunin",
 		links: {
 			// "Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
-			"Plan Monitoring":"https://docs.google.com/spreadsheets/d/1Wu_m2HQ1NtJgRTUuUafH_BuLoCsI1SRQFum0UK4NRPM/edit#gid=853151862",
+			"Plan Monitoring v1.0 (November)":"https://docs.google.com/spreadsheets/d/1y0UgFlbfm9rC2HB0RVjUnd3MRWHMQpaVdlbDuCliXfI/edit#gid=853151862",
+			"Plan Monitoring v1.1 (December)":"https://docs.google.com/spreadsheets/d/1Wu_m2HQ1NtJgRTUuUafH_BuLoCsI1SRQFum0UK4NRPM/edit#gid=853151862",
 		},
 		others: <div className="note">*Links under development...</div>
 	},
