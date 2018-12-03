@@ -5,20 +5,20 @@ import './index.css';
 class Note extends React.Component {
 	render() {
 		return (
-			<div class="post-it">
-				<div class="tape tape1"></div>
-				<div class="tape tape2"></div>
+			<div className="post-it">
+				<div className="tape tape1"></div>
+				<div className="tape tape2"></div>
 				<p></p>
 				<p>Updates as of : <strong>Dec 03, 2018</strong></p>
 				<p></p>
-				<p>Updated Productivity & Quality</p>
+				<p>- Updated Productivity & Quality</p>
 				<p>for Revision Dept.</p>
 				<p></p>
-				<p>Extracted Mistakes from Kakunin</p>
+				<p>- Extracted Mistakes from Kakunin</p>
 				<p>Dept. for month of November.</p>
 				<p></p>
-				<p></p>
-				<p></p>
+				<p>- Updated Link behavior for</p>
+				<p>Kakunin Dept</p>
 				<p></p>
 				<p></p>
 				<p></p>
@@ -30,24 +30,35 @@ class Note extends React.Component {
 
 class Link extends React.Component {
 	render(){
-		return (
-			<a
-				href={this.props.href} 
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				{this.props.label}
-			</a>
-		);
+		if(this.props.name === 'Kakunin Monitoring')
+		{
+			return (
+				<a href={this.props.href}>
+					{this.props.label}
+				</a>
+			);
+		}
+		else
+		{
+			return (
+				<a
+					href={this.props.href} 
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					{this.props.label}
+				</a>
+			);
+		}
 	}
 }
 
 class Section extends React.Component {
-	renderLink(link) {
+	renderLink(name, link) {
 		const links = [];
 		let i = 0;
 			for(const key in link){
-				links.push(<Link href={link[key]} label={key} key={i} />);
+				links.push(<Link href={link[key]} name={name} label={key} key={i} />);
 				i++;
 			}
 		return links;
@@ -57,7 +68,7 @@ class Section extends React.Component {
 		return (
 			<section id={this.props.value}>
 				<div className="title">{this.props.value}</div>
-				<div className="content">{this.renderLink(this.props.links)}</div>
+				<div className="content">{this.renderLink(this.props.value, this.props.links)}</div>
 				{this.props.others}
 			</section>
 		);
@@ -93,7 +104,6 @@ class NavLink extends React.Component {
 	render() {
 		return (
 			<div className="nav-link"
-				key={this.props.key}
 				onClick={this.props.onClick}
 			>
 			{this.props.value}
