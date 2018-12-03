@@ -2,6 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+class Note extends React.Component {
+	render() {
+		return (
+			<div class="post-it">
+				<div class="tape tape1"></div>
+				<div class="tape tape2"></div>
+				<p></p>
+				<p>Updates as of : <strong>Dec 03, 2018</strong></p>
+				<p></p>
+				<p>Updated Productivity & Quality</p>
+				<p>for Revision Dept.</p>
+				<p></p>
+				<p>Extracted Mistakes from Kakunin</p>
+				<p>Dept. for month of November.</p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+		);
+	}
+}
+
 class Link extends React.Component {
 	render(){
 		return (
@@ -45,7 +71,9 @@ class Main extends React.Component {
 	render() {
 		return (
 			<main>
-				<div id="Home" className="blank"></div>
+				<div id="Home" className="blank">
+					<Note />
+				</div>
 				{this.renderSection(this.props.content)}
 				<div className="blank"></div>
 			</main>
