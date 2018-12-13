@@ -9,17 +9,17 @@ class Note extends React.Component {
 				<div className="tape tape1"></div>
 				<div className="tape tape2"></div>
 				<p></p>
-				<p>Updates as of : <strong>Dec 03, 2018</strong></p>
-				<p></p>
-				<p>- Updated Productivity & Quality</p>
-				<p>for Revision Dept.</p>
+				<p>Updates as of : <strong>Dec 13, 2018</strong></p>
 				<p></p>
 				<p>- Extracted Mistakes from Kakunin</p>
-				<p>Dept. for month of November.</p>
+				<p>Dept. for month of December.</p>
 				<p></p>
-				<p>- Updated Link behavior for</p>
-				<p>Kakunin Dept</p>
+				<p>- Links for Revision Dept. are</p>
+				<p>grouped in a tab.</p>
 				<p></p>
+				<p>- New tab for Structural Dept.</p>
+				<p></p>
+				<p>- Plan Monitoring for Structural Dept.</p>
 				<p></p>
 				<p></p>
 				<p></p>
@@ -172,8 +172,8 @@ class HomePage extends React.Component {
  
 const sections = [
 	{
-		title: "Monitoring",
-		nav: "Monitoring",
+		title: "Revision Monitoring",
+		nav: "Revision",
 		links: {
 			// "Plan Monitoring (August 2018)": "https://docs.google.com/spreadsheets/d/1f4CM19eSHN_OdDZY39z4HAi1b_Ib4sfIP3aVderSdTM/edit#gid=925288811",
 			// "Mistake Monitoring (August 2018)":"https://docs.google.com/spreadsheets/d/10ZE2AkGJCynve6tog7xT8NkGqFI-ZF36TbaA8EO89yw/edit#gid=0",
@@ -181,32 +181,32 @@ const sections = [
 			"Plan Monitoring v2.1 (October)":"https://docs.google.com/spreadsheets/d/1quD2imwF8rqBQUzq6-m8lrqKBnPz1WRk5uzez7mwZFw/edit#gid=472071419",
 			"Plan Monitoring v2.2 (November)":"https://docs.google.com/spreadsheets/d/1cdXoLbqUIzCjVEjcnhuEuX5EHR5ZwH6rJDFXvTGOKU4/edit#gid=472071419",
 			"Plan Monitoring v2.3 (December)":"https://docs.google.com/spreadsheets/d/1XZZKyuTz3GOxdhfFxONMudkbBcZ_I60H64eFBxoN7Fk/edit#gid=472071419",
-		},
-		others: ""
-	},
-	{
-		title: "Manual",
-		nav: "Manual",
-		links: {
-			"Check List":"../misc/pdf/checklist10.01.2018.pdf",
-			"Checking Manual":"../misc/pdf/manual_for_checking10.01.2018.pdf",
-			"Basic Detailing":"../misc/pdf/dp.pdf",
-			"Basic Electrical Plan":"../misc/pdf/ep.pdf",
-			"DP & EP (Updated)":"../misc/pdf/dpep10.02.2018.pdf",
-			"Storage Plan (Actie)":"../misc/pdf/sp.pdf",
-		},
-		others: ""
-	},
-	{
-		title: "Report",
-		nav: "Report",
-		links: {
-			"Monthly Comparison":"https://docs.google.com/spreadsheets/d/1S0FXjVacFKHxqwcVHWoMKkSI9NckSquD0DjNQzzNNMg/edit#gid=1015423851",
 			"Productivity & Quality Report":"https://docs.google.com/spreadsheets/d/1ZkU9-HDHKubtWJlStzilFwa-C-RDmr4-1sgm0CpCbnk/edit#gid=1537691498",
 		},
 		others: ""
 	},
-		{
+	// {
+	// 	title: "Manual",
+	// 	nav: "Manual",
+	// 	links: {
+	// 		"Check List":"../misc/pdf/checklist10.01.2018.pdf",
+	// 		"Checking Manual":"../misc/pdf/manual_for_checking10.01.2018.pdf",
+	// 		"Basic Detailing":"../misc/pdf/dp.pdf",
+	// 		"Basic Electrical Plan":"../misc/pdf/ep.pdf",
+	// 		"DP & EP (Updated)":"../misc/pdf/dpep10.02.2018.pdf",
+	// 		"Storage Plan (Actie)":"../misc/pdf/sp.pdf",
+	// 	},
+	// 	others: ""
+	// },
+	// {
+	// 	title: "Report",
+	// 	nav: "Report",
+	// 	links: {
+	// 		"Monthly Comparison":"https://docs.google.com/spreadsheets/d/1S0FXjVacFKHxqwcVHWoMKkSI9NckSquD0DjNQzzNNMg/edit#gid=1015423851",
+	// 	},
+	// 	others: ""
+	// },
+	{
 		title: "Kakunin Monitoring",
 		nav: "Kakunin",
 		links: {
@@ -216,7 +216,16 @@ const sections = [
 		},
 		others: <div className="note">*Links under development...</div>
 	},
-		{
+	{
+		title: "Structural Monitoring",
+		nav: "Structural",
+		links: {
+			// "Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
+			"Plan Monitoring v1.0 (December)":"https://docs.google.com/spreadsheets/d/18Hr9KuifQq0uh2B79asETe6yF9kjuP7lpwPc-Yvbgjs/edit#gid=853151862",
+		},
+		others: <div className="note">*Links under development...</div>
+	},
+	{
 		title: "Additional Links",
 		nav: "Additional",
 		links: {
