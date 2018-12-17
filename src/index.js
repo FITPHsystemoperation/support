@@ -9,19 +9,19 @@ class Note extends React.Component {
 				<div className="tape tape1"></div>
 				<div className="tape tape2"></div>
 				<p></p>
+				<p>Updates as of : <strong>Dec 17, 2018</strong></p>
+				<p></p>
+				<p>- Monitoring {"{"} Revision , Kakunin {"}"}</p>
+				<p>for month of January.</p>
+				<p></p>
 				<p>Updates as of : <strong>Dec 13, 2018</strong></p>
 				<p></p>
 				<p>- Extracted Mistakes from Kakunin</p>
 				<p>Dept. for month of December.</p>
-				<p></p>
 				<p>- Links for Revision Dept. are</p>
 				<p>grouped in a tab.</p>
-				<p></p>
 				<p>- New tab for Structural Dept.</p>
-				<p></p>
 				<p>- Plan Monitoring for Structural Dept.</p>
-				<p></p>
-				<p></p>
 				<p></p>
 			</div>
 		);
@@ -214,6 +214,7 @@ const sections = [
 			// "Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
 			"Plan Monitoring v1.0 (November)":"https://docs.google.com/spreadsheets/d/1y0UgFlbfm9rC2HB0RVjUnd3MRWHMQpaVdlbDuCliXfI/edit#gid=472071419",
 			"Plan Monitoring v1.1 (December)":"https://docs.google.com/spreadsheets/d/1Wu_m2HQ1NtJgRTUuUafH_BuLoCsI1SRQFum0UK4NRPM/edit#gid=472071419",
+			"Plan Monitoring v1.2 (January)":"https://docs.google.com/spreadsheets/d/1PBUkvAkA0hXdPnVHT1K4_GYX-_-famzt7wndcHHQhGU/edit#gid=472071419",
 		},
 		others: <div className="note">*Links under development...</div>
 	},
