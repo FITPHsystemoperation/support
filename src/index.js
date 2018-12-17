@@ -147,7 +147,7 @@ class Header extends React.Component {
 						value="Get Started"
 						onClick={() => {
 							const nav = document.querySelector('.nav');
-							const targetDom = document.getElementById("Monitoring");
+							const targetDom = document.getElementById(sections[0].title);
 							window.scrollTo(0, targetDom.offsetTop - nav.offsetHeight);
 						}}
 					/>
