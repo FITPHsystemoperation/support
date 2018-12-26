@@ -9,19 +9,19 @@ class Note extends React.Component {
 				<div className="tape tape1"></div>
 				<div className="tape tape2"></div>
 				<p></p>
+				<p>Updates as of : <strong>Dec 26, 2018</strong></p>
+				<p></p>
+				<p>- Monitoring Structural Department</p>
+				<p>for month of January.</p>
+				<p></p>
 				<p>Updates as of : <strong>Dec 17, 2018</strong></p>
 				<p></p>
 				<p>- Monitoring {"{"} Revision , Kakunin {"}"}</p>
 				<p>for month of January.</p>
 				<p></p>
-				<p>Updates as of : <strong>Dec 13, 2018</strong></p>
 				<p></p>
-				<p>- Extracted Mistakes from Kakunin</p>
-				<p>Dept. for month of December.</p>
-				<p>- Links for Revision Dept. are</p>
-				<p>grouped in a tab.</p>
-				<p>- New tab for Structural Dept.</p>
-				<p>- Plan Monitoring for Structural Dept.</p>
+				<p></p>
+				<p></p>
 				<p></p>
 			</div>
 		);
@@ -224,6 +224,7 @@ const sections = [
 		links: {
 			// "Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
 			"Plan Monitoring v1.0 (December)":"https://docs.google.com/spreadsheets/d/18Hr9KuifQq0uh2B79asETe6yF9kjuP7lpwPc-Yvbgjs/edit#gid=853151862",
+			"Plan Monitoring v1.1 (January)":"https://docs.google.com/spreadsheets/d/1Yb_zHXG6PCB8tyv_uZ3CYEFsBO4M8u3AlZ0cm0iHFhs/edit#gid=853151862",
 		},
 		others: <div className="note">*Links under development...</div>
 	},
