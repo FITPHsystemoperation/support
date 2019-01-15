@@ -9,15 +9,15 @@ class Note extends React.Component {
 				<div className="tape tape1"></div>
 				<div className="tape tape2"></div>
 				<p></p>
-				<p>Updates as of : <strong>Jan 08, 2019</strong></p>
+				<p>Updates as of : <strong>Jan 15, 2019</strong></p>
 				<p></p>
-				<p>- With generated reports from</p>
-				<p>gathered data for kakunin Dept.</p>
+				<p>- Changed calculation in Quality</p>
+				<p>Report for Revision Department.</p>
 				<p></p>
-				<p>Updates as of : <strong>Jan 07, 2019</strong></p>
 				<p></p>
-				<p>- Updated Productivity & Quality</p>
-				<p>Report for Revision Dept.</p>
+				<p></p>
+				<p></p>
+				<p></p>
 				<p></p>
 				<p></p>
 				<p></p>
