@@ -14,11 +14,11 @@ class Note extends React.Component {
 				<p>- Changed calculation in Quality</p>
 				<p>Report for Revision Department.</p>
 				<p></p>
+				<p>Updates as of : <strong>Jan 16, 2019</strong></p>
 				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
+				<p>- Separated ranking for {"{"}</p>
+				<p>Productivity, Quality, Plans {"}"}</p>
+				<p>for Revision Dept.</p>
 				<p></p>
 				<p></p>
 				<p></p>
