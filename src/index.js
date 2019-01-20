@@ -216,8 +216,9 @@ const sections = [
 			"Plan Monitoring v1.0 (November)":"https://docs.google.com/spreadsheets/d/1y0UgFlbfm9rC2HB0RVjUnd3MRWHMQpaVdlbDuCliXfI/edit#gid=472071419",
 			"Plan Monitoring v1.1 (December)":"https://docs.google.com/spreadsheets/d/1Wu_m2HQ1NtJgRTUuUafH_BuLoCsI1SRQFum0UK4NRPM/edit#gid=472071419",
 			"Plan Monitoring v1.2 (January)":"https://docs.google.com/spreadsheets/d/1PBUkvAkA0hXdPnVHT1K4_GYX-_-famzt7wndcHHQhGU/edit#gid=472071419",
+			"Plan Monitoring v1.3 (February)":"https://docs.google.com/spreadsheets/d/1LCBO8MiuKP0zAYSxgCCuRXbCCykpwn6oOMPSeug71zk/edit#gid=472071419",
 		},
-		others: <div className="note">*Links under development...</div>
+		others: ""
 	},
 	{
 		title: "Structural Monitoring",
@@ -227,7 +228,7 @@ const sections = [
 			"Plan Monitoring v1.0 (December)":"https://docs.google.com/spreadsheets/d/18Hr9KuifQq0uh2B79asETe6yF9kjuP7lpwPc-Yvbgjs/edit#gid=853151862",
 			"Plan Monitoring v1.1 (January)":"https://docs.google.com/spreadsheets/d/1Yb_zHXG6PCB8tyv_uZ3CYEFsBO4M8u3AlZ0cm0iHFhs/edit#gid=853151862",
 		},
-		others: <div className="note">*Links under development...</div>
+		others: ""
 	},
 	{
 		title: "Additional Links",
