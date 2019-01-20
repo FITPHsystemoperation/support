@@ -182,6 +182,7 @@ const sections = [
 			"Plan Monitoring v2.2 (November)":"https://docs.google.com/spreadsheets/d/1cdXoLbqUIzCjVEjcnhuEuX5EHR5ZwH6rJDFXvTGOKU4/edit#gid=472071419",
 			"Plan Monitoring v2.3 (December)":"https://docs.google.com/spreadsheets/d/1XZZKyuTz3GOxdhfFxONMudkbBcZ_I60H64eFBxoN7Fk/edit#gid=472071419",
 			"Plan Monitoring v2.4 (January)":"https://docs.google.com/spreadsheets/d/1Ntb_fC6MTIFEGDHn34155DZ-CvPEnfF3YOop3Ksf74w/edit#gid=472071419",
+			"Plan Monitoring v2.5 (February)":"https://docs.google.com/spreadsheets/d/11fHrpA_TRSrkQD-oLbjKhpfAwsDYT3Noez0moGj8k1A/edit#gid=472071419",
 			"Productivity & Quality Report":"https://docs.google.com/spreadsheets/d/1ZkU9-HDHKubtWJlStzilFwa-C-RDmr4-1sgm0CpCbnk/edit#gid=1537691498",
 		},
 		others: ""
