@@ -227,6 +227,7 @@ const sections = [
 			// "Mistake Encoding":"https://goo.gl/forms/X8lNbWjhq7LFVmnt1",
 			"Plan Monitoring v1.0 (December)":"https://docs.google.com/spreadsheets/d/18Hr9KuifQq0uh2B79asETe6yF9kjuP7lpwPc-Yvbgjs/edit#gid=853151862",
 			"Plan Monitoring v1.1 (January)":"https://docs.google.com/spreadsheets/d/1Yb_zHXG6PCB8tyv_uZ3CYEFsBO4M8u3AlZ0cm0iHFhs/edit#gid=853151862",
+			"Plan Monitoring v1.2 (February)":"https://docs.google.com/spreadsheets/d/1zjy-lZfTpTeRzmezqqvhthe5O4c8cTtWnd5Ogj3Mu0I/edit#gid=472071419",
 		},
 		others: ""
 	},
