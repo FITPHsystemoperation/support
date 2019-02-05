@@ -9,17 +9,17 @@ class Note extends React.Component {
 				<div className="tape tape1"></div>
 				<div className="tape tape2"></div>
 				<p></p>
-				<p>Updates as of : <strong>Jan 21, 2019</strong></p>
+				<p>Updates as of : <strong>Feb 05, 2019</strong></p>
 				<p></p>
-				<p>- February Monitoring for</p>
-				<p>{"{"} Revision, Kakunin, Structural {"}"}</p>
-				<p>Department.</p>
+				<p>- Generated Revision Dept.</p>
+				<p>Productivity & Quality for</p>
+				<p>the month of January.</p>
 				<p></p>
-				<p>Updates as of : <strong>Jan 16, 2019</strong></p>
 				<p></p>
-				<p>- Separated ranking for</p>
-				<p>{"{"} Productivity, Quality, Plans {"}"}</p>
-				<p>for Revision Department.</p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
 				<p></p>
 				<p></p>
 				<p></p>
