@@ -9,9 +9,9 @@ class Note extends React.Component {
 				<div className="tape tape1"></div>
 				<div className="tape tape2"></div>
 				<p></p>
-				<p>Updates as of : <strong>Feb 20, 2019</strong></p>
+				<p>Updates as of : <strong>March 5, 2019</strong></p>
 				<p></p>
-				<p>- Plan Monitoring for the</p>
+				<p>- Generated reports for the</p>
 				<p>month of March.</p>
 				<p></p>
 				<p></p>
