@@ -12,10 +12,10 @@ class Note extends React.Component {
 				<p>Updates as of : <strong>March 26, 2019</strong></p>
 				<p></p>
 				<p>- Additional rows in Precut Check</p>
-				<p>tab for structural monitoring.</p>
+				<p>tab for Structural Monitoring.</p>
 				<p></p>
-				<p></p>
-				<p></p>
+				<p>- Additional staffs for checking</p>
+				<p>and encoding for Revision Monitoring.</p>
 				<p></p>
 				<p></p>
 				<p></p>
