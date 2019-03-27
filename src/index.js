@@ -9,13 +9,13 @@ class Note extends React.Component {
 				<div className="tape tape1"></div>
 				<div className="tape tape2"></div>
 				<p></p>
-				<p>Updates as of : <strong>March 26, 2019</strong></p>
+				<p>Updates as of : <strong>March 28, 2019</strong></p>
 				<p></p>
-				<p>- Additional rows in Precut Check</p>
-				<p>tab for Structural Monitoring.</p>
+				<p>- Monitoring for the month of April.</p>
 				<p></p>
-				<p>- Additional staffs for checking</p>
-				<p>and encoding for Revision Monitoring.</p>
+				<p></p>
+				<p></p>
+				<p></p>
 				<p></p>
 				<p></p>
 				<p></p>
@@ -184,6 +184,7 @@ const sections = [
 			"Plan Monitoring v2.4 (January)":"https://docs.google.com/spreadsheets/d/1Ntb_fC6MTIFEGDHn34155DZ-CvPEnfF3YOop3Ksf74w/edit#gid=472071419",
 			"Plan Monitoring v2.5 (February)":"https://docs.google.com/spreadsheets/d/11fHrpA_TRSrkQD-oLbjKhpfAwsDYT3Noez0moGj8k1A/edit#gid=472071419",
 			"Plan Monitoring v2.6 (March)":"https://docs.google.com/spreadsheets/d/1ljDDYuuIIR1Qe_LgxZb_kQdakh2bb9RXxXLcF1qO9rg/edit#gid=472071419",
+			"Plan Monitoring v2.7 (April)":"https://docs.google.com/spreadsheets/d/1sekmFNzUk3jrNho9X8mq6CZGd7QpjdwTKaV4ToyA0Qg/edit#gid=472071419",
 			"Productivity & Quality Report":"https://docs.google.com/spreadsheets/d/1ZkU9-HDHKubtWJlStzilFwa-C-RDmr4-1sgm0CpCbnk/edit#gid=1537691498",
 		},
 		others: ""
@@ -219,6 +220,7 @@ const sections = [
 			"Plan Monitoring v1.2 (January)":"https://docs.google.com/spreadsheets/d/1PBUkvAkA0hXdPnVHT1K4_GYX-_-famzt7wndcHHQhGU/edit#gid=472071419",
 			"Plan Monitoring v1.3 (February)":"https://docs.google.com/spreadsheets/d/1LCBO8MiuKP0zAYSxgCCuRXbCCykpwn6oOMPSeug71zk/edit#gid=472071419",
 			"Plan Monitoring v1.4 (March)":"https://docs.google.com/spreadsheets/d/1P6LuxuZxax4vLdUXD_hTT1GJNrx14RJu5J0lrCm-Moo/edit#gid=472071419",
+			"Plan Monitoring v1.5 (April)":"https://docs.google.com/spreadsheets/d/1WacjDirJdlitrKSngJsUmB1ZdYyPSUd8xtLpk4TkKPc/edit#gid=472071419",
 		},
 		others: ""
 	},
@@ -231,6 +233,7 @@ const sections = [
 			"Plan Monitoring v1.1 (January)":"https://docs.google.com/spreadsheets/d/1Yb_zHXG6PCB8tyv_uZ3CYEFsBO4M8u3AlZ0cm0iHFhs/edit#gid=853151862",
 			"Plan Monitoring v1.2 (February)":"https://docs.google.com/spreadsheets/d/1zjy-lZfTpTeRzmezqqvhthe5O4c8cTtWnd5Ogj3Mu0I/edit#gid=472071419",
 			"Plan Monitoring v1.3 (March)":"https://docs.google.com/spreadsheets/d/1ZHNNmgZT6IPqk3edlMyjvroG135rX8rY5ggbYhzFw1I/edit#gid=472071419",
+			"Plan Monitoring v1.4 (April)":"https://docs.google.com/spreadsheets/d/1IvXrIqxajvQRDmOHRy30fKM3L2a8aatNA719EVIe4Mc/edit#gid=472071419",
 		},
 		others: ""
 	},
