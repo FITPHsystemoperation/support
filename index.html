@@ -49,9 +49,12 @@
       background-color: black;
     }
 
-    h2 {
+    .dept-title {
       padding: 0.2em 0.2em;
       margin: 0;
+      font-size: 1.5em;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     .cover {
@@ -74,16 +77,16 @@
   <div class="container">
     <h1>Process Monitoring</h1>
     <p>Please login to Google account before accessing the spreadsheets.</p>
-    <section id="revision_dept">
-      <h2>修正部 REVISION Department</h2>
+    <details id="revision_dept" onclick="closeOthers(this)">
+      <summary class="dept-title">修正部 REVISION Department</summary>
       <ul>
         <li><a href="https://drive.google.com/drive/folders/1Etia5GnKrAhCDc-bTFZpJMT37chKlNjc" target="_blank" rel="noopener noreferrer">Monitoringフォルダ</a></li>
         <li><a href="https://docs.google.com/spreadsheets/u/2/d/1olk2STijf_AeIEiROVRpI5iEr1yCFHDlcIkfdSuMELc" target="_blank" rel="noopener noreferrer">Monthly Report</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1hD1sYnf_btSktRM8SiYJStvzM5hsmdZHoROt4tSWCOU" target="_blank" rel="noopener noreferrer">図面修正依頼書</a></li>
       </ul>
-    </section>
-    <section id="kakunin_dept">
-      <h2>確認申請 KAKUNIN Department</h2>
+    </details>
+    <details id="kakunin_dept" onclick="closeOthers(this)">
+      <summary class="dept-title">確認申請 KAKUNIN Department</summary>
       <ul>
         <li><a href="https://drive.google.com/drive/folders/1p68IDIzAPRU8AVMullUvJA1do1ko4xTj" target="_blank" rel="noopener noreferrer">Monitoringフォルダ</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1nnaGgpvAJ85fSdDCGqd9ts-1bdq99ga-zayeZVz89Kc" target="_blank" rel="noopener noreferrer">CHOUKI SEINOU/BELS/GAIHI</a></li>
@@ -91,16 +94,26 @@
         <li><a href="https://docs.google.com/spreadsheets/d/1CPfEA-vun7XmF-_Ip6zhUOt49xt-hGh7rFdGGRIS52w" target="_blank" rel="noopener noreferrer">FOUNDATION AND PRECUT- CHOUKI AND SEINOU</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1fjc8qMPJZF92BDvl_NfTyanDPizj8XTp7oLYZV80aZU" target="_blank" rel="noopener noreferrer">LIST CONSTRUCTION</a></li>
       </ul>
-    </section>
-    <section id="structural_dept">
-      <h2>構造部 STRUCTURAL Department</h2>
+    </details>
+    <details id="structural_dept" onclick="closeOthers(this)">
+      <summary class="dept-title">構造部 STRUCTURAL Department</summary>
       <ul>
         <li><a href="https://drive.google.com/drive/folders/18mkN8nLlIw7hYFkKC6vlOFBBRMVdc_3N" target="_blank" rel="noopener noreferrer">Monitoringフォルダ</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1errUUv3sZN_GAHHM8kUosnL69ItT5zioCT3gkIsJZMQ" target="_blank" rel="noopener noreferrer">SEKISAN REQUEST FORM - 積算依頼書</a></li>
       </ul>
-      </section>
-    <section id="other_dept">
-      <h2>Other Links</h2>
+    </details>
+    <details id="translation_dept" onclick="closeOthers(this)">
+      <summary class="dept-title">TRANSLATION Department</summary>
+        <ul>
+          <li><a href="https://docs.google.com/spreadsheets/d/1d6MI8ClfSC8xa-cfJxAS95-Fx5h5_Zwivu2X7wSq7Jo/edit?pli=1#gid=2008708506" target="_blank" rel="noopener noreferrer">Other Companies Translations</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1d6MI8ClfSC8xa-cfJxAS95-Fx5h5_Zwivu2X7wSq7Jo/edit?pli=1#gid=1247743142" target="_blank" rel="noopener noreferrer">TRANSLATOR C / CSV・確認・換気・着工要因・Spreadsheet update</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1d6MI8ClfSC8xa-cfJxAS95-Fx5h5_Zwivu2X7wSq7Jo/edit?pli=1#gid=1804918458" target="_blank" rel="noopener noreferrer">Contact Information (Other Companies)</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1d6MI8ClfSC8xa-cfJxAS95-Fx5h5_Zwivu2X7wSq7Jo/edit?pli=1#gid=975654020" target="_blank" rel="noopener noreferrer">Contact information (NEXT group)</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1d6MI8ClfSC8xa-cfJxAS95-Fx5h5_Zwivu2X7wSq7Jo/edit?pli=1#gid=278014472" target="_blank" rel="noopener noreferrer">CHOUKI・SEINOU・TEITANSO (Outsource)</a></li>
+        </ul>
+    </details>
+    <details id="other_dept" onclick="closeOthers(this)">
+      <summary class="dept-title">Other Links</summary>
       <ul>
         <li><a href="https://docs.google.com/spreadsheets/d/1jKAao-2QcKtGUz5ZBXxoAusP0Ulcsj9hn1R91EBcPtk" target="_blank" rel="noopener noreferrer">JW Conversion Spreadsheet</a></li>
         <li><a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">Gmail</a></li>
@@ -108,7 +121,22 @@
         <li><a href="https://www.databank-solution.net/" target="_blank">Data Bank</a></li>
         <li><a href="https://firestorage.jp/" target="_blank">Fire Storage</a></li>
       </ul>
-    </section>
+    </details>
   </div>
 </body>
+<script>
+  /* close other details/summary tags when one is opened */
+  function closeOthers(obj) {
+
+    var current = obj.id;
+    var count = document.getElementsByTagName('details').length;
+    for (var i=0; i<count; i++) {
+      var target = document.getElementsByTagName('details')[i];
+      if (target.id != obj.id && target.hasAttribute('open')) {
+        target.removeAttribute('open');
+      }
+    }
+  }
+
+</script>
 </html>
